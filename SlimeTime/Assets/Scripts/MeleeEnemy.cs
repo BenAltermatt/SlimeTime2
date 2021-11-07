@@ -2,30 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeEnemy : EnemyController
+public class MeleeEnemy : MonoBehaviour
 {
-   public float range;
-
-    void FixedUpdate()
+    // Start is called before the first frame update
+    void Start()
     {
-        prepareUpdate();
-        moveProperly();
-        attackProperly();
+        
     }
 
-    public void moveProperly()
+    // Update is called once per frame
+    void Update()
     {
-        move(trackTarget());
-    }
-
-    public void attackProperly()
-    {
-        Vector3 enemyPos = targetPos.position;
-        float distToTarget = Mathf.Sqrt(Mathf.Pow(enemyPos.x - rb.position.x, 2) + Mathf.Pow(enemyPos.y - rb.position.y, 2));
-
-        if(distToTarget <= range)
-        {
-            attack();
-        }
+        
     }
 }
