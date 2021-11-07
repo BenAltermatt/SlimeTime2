@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public float meleeCooldown;
     private float timeSwung;
     public int swingDir;
+    public bool swinging;
 
     public Rigidbody2D rb;
     public GameObject projectile;
@@ -54,6 +55,7 @@ public class PlayerController : MonoBehaviour
         cam = Camera.main;
         timeShot = Time.time;
         timeSwung = Time.time;
+        swinging = false;
 
         lastDir = DOWN;
         swingDir = DOWN;
@@ -92,7 +94,7 @@ public class PlayerController : MonoBehaviour
         if(Time.time - timeSwung > swingSpeed)
         {
             hitBoxes[swingDir].enabled = false;
-            slashAnimators[swingDir].SetInteger("TriggeredDir", 4);
+            swinging = false;
         }
         if(Input.GetKey("space"))
         {
@@ -116,7 +118,7 @@ public class PlayerController : MonoBehaviour
         }
         
         anim.SetInteger("Direction", lastDir);
-        Debug.Log(anim.GetInteger("Direction"));
+        // Debug.Log(anim.GetInteger("Direction"));
         rb.velocity = new Vector2(x * speed, y * speed);
 
         if(magnitude != 0)
@@ -142,7 +144,8 @@ public class PlayerController : MonoBehaviour
         {
             hitBoxes[lastDir].enabled = true;
             swingDir = lastDir;
-            slashAnimators[swingDir].SetInteger("TriggeredDir", swingDir);
+            slashAnimators[swingDir].SetTrigger("Trigger");
+            swinging = true;
             timeSwung = Time.time;
         }
     }
@@ -154,32 +157,32 @@ public class PlayerController : MonoBehaviour
         {
             if(collider.gameObject.name == "blue-bird")
             {
-                Debug.Log("Ate blue-bird (health)");
+                // Debug.Log("Ate blue-bird (health)");
                 health+=1;
             }
             if(collider.gameObject.name == "yellow-bird")
             {
-                Debug.Log("Ate yellow-bird (speed)");
+                // Debug.Log("Ate yellow-bird (speed)");
                 speed+=1;
             }
             if(collider.gameObject.name == "brown-bird")
             {
-                Debug.Log("Ate brown-bird (defense)");
+                // Debug.Log("Ate brown-bird (defense)");
                 speed+=1;
             }
             if(collider.gameObject.name == "fire-lizard")
             {
-                Debug.Log("Ate fire-lizard");
+                // Debug.Log("Ate fire-lizard");
                 fireStrength += 1;
             }
             if(collider.gameObject.name == "ice-lizard")
             {
-                Debug.Log("Ate ice-lizard");
+                // Debug.Log("Ate ice-lizard");
                 iceStrength += 1;
             }
             if(collider.gameObject.name == "poison-bush")
             {
-                Debug.Log("Ate poison-bush");
+                // Debug.Log("Ate poison-bush");
                 poisonStrength += 1;
             }
 
@@ -191,9 +194,9 @@ public class PlayerController : MonoBehaviour
         {   
             if(collider.gameObject.tag == "Projectile" && collider.gameObject.GetComponent<ProjectileBehavior>().parTag != "Player")
             {
-                Debug.Log("hit.");
+                // Debug.Log("hit.");
                 float str = collider.gameObject.GetComponent<ProjectileBehavior>().strength;
-                Debug.Log(str);
+                // Debug.Log(str);
                 health -= Constants.calcDamage(str, defense);
             }
 

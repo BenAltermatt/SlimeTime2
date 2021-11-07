@@ -66,7 +66,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        runAway();
+        
     }
 
     void runAway() {
@@ -143,6 +143,7 @@ public class EnemyController : MonoBehaviour
         else{
             lastDir = 1;
         }
+
     }
 
     public void attack()
