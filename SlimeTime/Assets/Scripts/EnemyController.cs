@@ -17,10 +17,10 @@ public class EnemyController : MonoBehaviour
 
     // melee stuff
     public float meleeCooldown;
-    private float timeSwung;
+    protected float timeSwung;
     public int swingDir;
 
-    private bool toBeDestroyed;
+    protected bool toBeDestroyed;
 
     // hitboxes and hurtboxes
     public Collider2D hurtBox;
@@ -31,19 +31,19 @@ public class EnemyController : MonoBehaviour
     public const int LEFT = 2;
     public const int UP = 3;
 
-    private int lastDir;
+    protected int lastDir;
     
     public Rigidbody2D rb;
     public GameObject target;
     public GameObject projectile;
     public Transform tr;
-    private Transform targetPos;
+    protected Transform targetPos;
 
     // animator managers
     public Animator moveAnimator;
     public Animator[] slashAnimators;
 
-    private bool isMoving;
+    protected bool isMoving;
 
     // Start is called before the first frame update
     void Start()
@@ -92,6 +92,13 @@ public class EnemyController : MonoBehaviour
     }
 
     void FixedUpdate() {
+        prepareUpdate();
+        moveProperly();
+        attackProperly();
+    }
+
+    public void prepareUpdate()
+    {
         if(toBeDestroyed)
         {
             Destroy(gameObject);
@@ -100,16 +107,9 @@ public class EnemyController : MonoBehaviour
         {
             toBeDestroyed = true;
         }
-        move(trackTarget());
-        if(Input.GetMouseButton(0))
-            shoot();
         if(Time.time - timeSwung > swingSpeed)
         {
             hitBoxes[swingDir].enabled = false;
-        }
-        if(Input.GetKey("space"))
-        {
-            attack();
         }
     }
 
@@ -133,8 +133,20 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    // moves according to AI
+    public void moveProperly()
+    {
+        move(trackTarget());
+    }
+
+    // basic attack
+    public void attackProperly()
+    {
+
+    }
+
     // moves at a velocity and updates animations and stuff as necessary
-    void move(Vector2 velocity)
+    public void move(Vector2 velocity)
     {
         // figure out direction
         if(Mathf.Abs(velocity.y) >= Mathf.Abs(velocity.x)) // vertical will override
@@ -165,7 +177,7 @@ public class EnemyController : MonoBehaviour
     }
 
     // properly follows the target
-    private Vector2 trackTarget()
+    public Vector2 trackTarget()
     {
         Vector3 targPos = targetPos.position;
         Vector2 trajectory = new Vector2(targPos.x- rb.position.x, targPos.y - rb.position.y);
@@ -173,7 +185,7 @@ public class EnemyController : MonoBehaviour
 
         if(magnitude != 0)
         {
-            trajectory = trajectory * speed / magnitude;
+            trajectory = trajectory.normalized * speed;
         }
 
         return trajectory;
@@ -193,10 +205,12 @@ public class EnemyController : MonoBehaviour
     }
 
     // shoot at the target
-    void shoot()
+    public void shoot()
     {
+        Debug.Log("Trying to shoot");
         if(Time.time - timeShotted > shootCooldown) // it's cooled down
         {
+            Debug.Log("Shooting");
             Vector3 targPos = targetPos.position;
 
             GameObject boolet = GameObject.Instantiate(projectile, tr);
