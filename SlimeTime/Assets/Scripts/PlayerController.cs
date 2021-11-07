@@ -20,6 +20,15 @@ public class PlayerController : MonoBehaviour
     //Pointer to pfTextPopup Prefab
     public GameObject pfTextPopup;
 
+    //Pointer to text on statusboard;
+    public Text healthValue;
+    public Text strengthValue;
+    public Text defenseValue;
+    public Text speedValue;
+    public Text fireValue;
+    public Text iceValue;
+    public Text poisonValue;
+
     // takes care of shooting projectiles
     public float projectileCooldown;
     private float timeShot;
@@ -165,7 +174,14 @@ public class PlayerController : MonoBehaviour
             {
                 Debug.Log("Ate yellow-bird (speed)");
                 speed+=1;
+                swingSpeed+=1;
                 CreateMessage("+1 SPD");
+            }
+            if(collider.gameObject.name == "human") {
+                Debug.Log("Ate human (strength)");
+                strength += 1;
+                projectileStrength += 1;
+                CreateMessage("+1 STR");
             }
             if(collider.gameObject.name == "brown-bird")
             {
@@ -220,6 +236,17 @@ public class PlayerController : MonoBehaviour
         TMPro.TextMeshProUGUI text = go.GetComponentInChildren<TMPro.TextMeshProUGUI>();
         text.SetText(message);
         Destroy(go, 1);
+    }
+
+    //Updates the statboard
+    private void UpdateStats(){
+        healthValue.text=(health.ToString("0.00"));
+        strengthValue.text=(strength.ToString("0.00"));
+        defenseValue.text=(defense.ToString("0.00"));
+        speedValue.text=(speed.ToString("0.00"));
+        fireValue.text=(fireStrength.ToString("0.00"));
+        iceValue.text=(iceStrength.ToString("0.00"));
+        poisonValue.text=(poisonStrength.ToString("0.00"));
     }
 
 }
