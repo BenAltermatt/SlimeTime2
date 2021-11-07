@@ -215,12 +215,12 @@ GameObject:
   - component: {fileID: 6155947343112961978}
   - component: {fileID: 6155947343112961980}
   - component: {fileID: 6155947343112961979}
-  - component: {fileID: 6155947343112961981}
   - component: {fileID: 4821057040838657594}
   - component: {fileID: 2516810849180963818}
   - component: {fileID: 3664410696879830435}
   - component: {fileID: 3822596314714705489}
   - component: {fileID: 4182682183234205337}
+  - component: {fileID: 2420116786542783557}
   m_Layer: 0
   m_Name: CaveMan
   m_TagString: Enemy
@@ -294,36 +294,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6155947343112961981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6155947343112961977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 655b188d6e3d443a4b64a1802d863e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  health: 100
-  defense: 0
-  strength: 0
-  shootCooldown: 1
-  swingSpeed: 1
-  projectileStrength: 1
-  projectileSpeed: 10
-  meleeCooldown: 0.5
-  swingDir: 0
-  hurtBox: {fileID: 0}
-  hitBoxes: []
-  rb: {fileID: 6155947343112961979}
-  target: {fileID: 0}
-  projectile: {fileID: 6061886319510677427, guid: 8f1cec15abfb44baabd567b4b0a22cb8, type: 3}
-  tr: {fileID: 0}
-  moveAnimator: {fileID: 0}
-  slashAnimators: []
 --- !u!61 &4821057040838657594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -454,6 +424,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 1.1}
   m_EdgeRadius: 0
+--- !u!114 &2420116786542783557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6155947343112961977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97699e922050c4716a5fe1e315d0b9f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  health: 100
+  defense: 50
+  strength: 1
+  shootCooldown: 0
+  swingSpeed: 1
+  projectileStrength: 0
+  projectileSpeed: 0
+  corpsePf: {fileID: 1839932784879941582, guid: 060504c3afa384acba166dbdcf781856, type: 3}
+  meleeCooldown: 0.2
+  swingDir: 0
+  hurtBox: {fileID: 0}
+  hitBoxes: []
+  rb: {fileID: 0}
+  target: {fileID: 0}
+  projectile: {fileID: 6061886319510677427, guid: 8f1cec15abfb44baabd567b4b0a22cb8, type: 3}
+  tr: {fileID: 0}
+  moveAnimator: {fileID: 0}
+  slashAnimators: []
+  range: 1
 --- !u!1 &6155947343566681439
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +528,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5484466899415276226, guid: 018eb44e5b0b342a1b94eb3beb496a18, type: 3}
+  m_Sprite: {fileID: 515931979780017197, guid: 9374b5410d5304b93ad92b1b0977078f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
