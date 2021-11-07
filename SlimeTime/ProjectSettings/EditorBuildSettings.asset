@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Dialogue/Dialogue/Main.unity
     guid: 6b0a0e5d954e691479bb47934fa51d7d
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/level-1.unity
+    guid: b217353ca9dde42dea9c5800929bab0c
   m_configObjects: {}

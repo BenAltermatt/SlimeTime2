@@ -165,44 +165,44 @@ public class PlayerController : MonoBehaviour
         //If we're eating a corpse or a plant
         if (collider.gameObject.tag == "Edible")
         {
-            if(collider.gameObject.name == "blue-bird")
+            if(collider.gameObject.name.Contains("blue-bird"))
             {
                 Debug.Log("Ate blue-bird (health)");
                 health+=1;
                 CreateMessage("+1 HLTH");
             }
-            if(collider.gameObject.name == "yellow-bird")
+            if(collider.gameObject.name.Contains("yellow-bird"))
             {
                 Debug.Log("Ate yellow-bird (speed)");
                 speed+=1;
                 swingSpeed+=1;
                 CreateMessage("+1 SPD");
             }
-            if(collider.gameObject.name == "human") {
+            if(collider.gameObject.name.Contains("human")) {
                 Debug.Log("Ate human (strength)");
                 strength += 1;
                 projectileStrength += 1;
                 CreateMessage("+1 STR");
             }
-            if(collider.gameObject.name == "brown-bird")
+            if(collider.gameObject.name.Contains("brown-bird"))
             {
                 Debug.Log("Ate brown-bird (defense)");
                 defense+=1;
                 CreateMessage("+1 DEF");
             }
-            if(collider.gameObject.name == "fire-lizard")
+            if(collider.gameObject.name.Contains("fire-lizard"))
             {
                 Debug.Log("Ate fire-lizard");
                 fireStrength += 1;
                 CreateMessage("+1 FIRE");
             }
-            if(collider.gameObject.name == "ice-lizard")
+            if(collider.gameObject.name.Contains("ice-lizard"))
             {
                 Debug.Log("Ate ice-lizard");
                 iceStrength += 1;
                 CreateMessage("+1 ICE");
             }
-            if(collider.gameObject.name == "poison-bush")
+            if(collider.gameObject.name.Contains("poison-bush"))
             {
                 Debug.Log("Ate poison-bush");
                 poisonStrength += 1;

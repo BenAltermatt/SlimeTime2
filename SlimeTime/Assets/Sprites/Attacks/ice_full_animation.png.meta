@@ -1,31 +1,43 @@
 fileFormatVersion: 2
-guid: 93c27745197e84a74ac89f17eb310772
+guid: 9bff80e1e542947559b077b0d651a68e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8844279423612291002
-    second: IceLizard_0
+      213: -1207580506415667968
+    second: ice_full_animation_0
   - first:
-      213: 8957237390411810330
-    second: IceLizard_1
+      213: 608475294879036427
+    second: ice_full_animation_1
   - first:
-      213: -6542125390982710777
-    second: IceLizard_2
+      213: 1978528302515990585
+    second: ice_full_animation_2
   - first:
-      213: 7824587422594884483
-    second: IceLizard_3
+      213: 1144677543805514155
+    second: ice_full_animation_3
   - first:
-      213: -1769744447846999848
-    second: IceLizard_4
+      213: -8166223157698402722
+    second: ice_full_animation_4
   - first:
-      213: -6761973224196078313
-    second: IceLizard_5
+      213: 3286801010080133317
+    second: ice_full_animation_5
   - first:
-      213: 1082547928515794298
-    second: IceLizard_6
+      213: -6342994605475156113
+    second: ice_full_animation_6
   - first:
-      213: -4811596802306976279
-    second: IceLizard_7
+      213: 5490165051802397638
+    second: ice_full_animation_7
+  - first:
+      213: 1716334882574749065
+    second: ice_full_animation_8
+  - first:
+      213: -6153943897801159868
+    second: ice_full_animation_9
+  - first:
+      213: -302429498154971294
+    second: ice_full_animation_10
+  - first:
+      213: 2580727958286991886
+    second: ice_full_animation_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +82,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,7 +139,70 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IceLizard_0
+      name: ice_full_animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005686d6defcd3fe0800000000000000
+      internalID: -1207580506415667968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_full_animation_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04bddd8e0db17800800000000000000
+      internalID: 608475294879036427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_full_animation_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930b5892205257b10800000000000000
+      internalID: 1978528302515990585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_full_animation_3
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab705bad6413dba70800000000000000
-      internalID: 8844279423612291002
+      spriteID: ba1f4ec4926b2ef00800000000000000
+      internalID: 1144677543805514155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IceLizard_1
+      name: ice_full_animation_4
       rect:
         serializedVersion: 2
         x: 32
@@ -162,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a16c758f2ff7e4c70800000000000000
-      internalID: 8957237390411810330
+      spriteID: e5661d8fd4fbbae80800000000000000
+      internalID: -8166223157698402722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IceLizard_2
+      name: ice_full_animation_5
       rect:
         serializedVersion: 2
         x: 64
@@ -183,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70a796a5e93b535a0800000000000000
-      internalID: -6542125390982710777
+      spriteID: 5c0b83dba101d9d20800000000000000
+      internalID: 3286801010080133317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IceLizard_3
+      name: ice_full_animation_6
       rect:
         serializedVersion: 2
         x: 0
@@ -204,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 383e1cdedc4869c60800000000000000
-      internalID: 7824587422594884483
+      spriteID: f6f2f60530829f7a0800000000000000
+      internalID: -6342994605475156113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IceLizard_4
+      name: ice_full_animation_7
       rect:
         serializedVersion: 2
         x: 32
@@ -225,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d81cda1dca9077e0800000000000000
-      internalID: -1769744447846999848
+      spriteID: 6cb22f6c60cf03c40800000000000000
+      internalID: 5490165051802397638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IceLizard_5
+      name: ice_full_animation_8
       rect:
         serializedVersion: 2
         x: 64
@@ -246,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7150717dd25a822a0800000000000000
-      internalID: -6761973224196078313
+      spriteID: 98dca7f6b75a1d710800000000000000
+      internalID: 1716334882574749065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IceLizard_6
+      name: ice_full_animation_9
       rect:
         serializedVersion: 2
         x: 0
@@ -267,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a75d48bfa9bf50f00800000000000000
-      internalID: 1082547928515794298
+      spriteID: 44b01e341acc89aa0800000000000000
+      internalID: -6153943897801159868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IceLizard_7
+      name: ice_full_animation_10
       rect:
         serializedVersion: 2
         x: 32
@@ -288,8 +363,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e556148336c93db0800000000000000
-      internalID: -4811596802306976279
+      spriteID: 26f8fd849fd8dcbf0800000000000000
+      internalID: -302429498154971294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_full_animation_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e028d9f976690d320800000000000000
+      internalID: 2580727958286991886
       vertices: []
       indices: 
       edges: []
