@@ -257,7 +257,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -311,10 +311,10 @@ MonoBehaviour:
   defense: 0
   strength: 0
   shootCooldown: 1
-  swingSpeed: 0
+  swingSpeed: 1
   projectileStrength: 1
   projectileSpeed: 10
-  meleeCooldown: 0
+  meleeCooldown: 0.5
   swingDir: 0
   hurtBox: {fileID: 0}
   hitBoxes: []
@@ -322,6 +322,8 @@ MonoBehaviour:
   target: {fileID: 0}
   projectile: {fileID: 6061886319510677427, guid: 8f1cec15abfb44baabd567b4b0a22cb8, type: 3}
   tr: {fileID: 0}
+  moveAnimator: {fileID: 0}
+  slashAnimators: []
 --- !u!61 &4821057040838657594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -332,7 +334,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 1, y: 0}
@@ -358,7 +360,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -1}
@@ -384,7 +386,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -1, y: 0}
@@ -410,7 +412,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 1}
@@ -436,7 +438,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

@@ -39,6 +39,12 @@ public class EnemyController : MonoBehaviour
     public Transform tr;
     private Transform targetPos;
 
+    // animator managers
+    public Animator moveAnimator;
+    public Animator[] slashAnimators;
+
+    private bool isMoving;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +67,16 @@ public class EnemyController : MonoBehaviour
             hitBoxes[i - 1] = boxes[i];
             hitBoxes[i - 1].enabled = false;
         }
+
+        Animator[] allAnimators = GetComponentsInChildren<Animator>();
+        slashAnimators = new Animator[4];
+        moveAnimator = allAnimators[0];
+        for(int i = 1; i < allAnimators.Length; i++)
+        {
+            slashAnimators[i - 1] = allAnimators[i];
+        }
+
+        isMoving = false;
     }
     
     // Update is called once per frame
@@ -84,12 +100,16 @@ public class EnemyController : MonoBehaviour
         {
             toBeDestroyed = true;
         }
-        trackTarget();
+        move(trackTarget());
         if(Input.GetMouseButton(0))
             shoot();
         if(Time.time - timeSwung > swingSpeed)
         {
             hitBoxes[swingDir].enabled = false;
+        }
+        if(Input.GetKey("space"))
+        {
+            attack();
         }
     }
 
@@ -113,8 +133,39 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    // moves at a velocity and updates animations and stuff as necessary
+    void move(Vector2 velocity)
+    {
+        // figure out direction
+        if(Mathf.Abs(velocity.y) >= Mathf.Abs(velocity.x)) // vertical will override
+        {
+            if(velocity.y > 0)
+                lastDir = 3;
+            else if(velocity.y < 0)
+                lastDir = 1;
+        }
+        else
+        {
+            if(velocity.x > 0)
+                lastDir = 0;
+            else
+                lastDir = 2;
+        }
+        
+        // are we moving?
+        if(velocity.sqrMagnitude > 0)
+        {
+            isMoving = true;
+        }
+
+        // update the animation accoridngly
+        moveAnimator.SetInteger("Direction", lastDir);
+        moveAnimator.SetBool("Moving", isMoving);
+        rb.velocity = velocity;
+    }
+
     // properly follows the target
-    void trackTarget()
+    private Vector2 trackTarget()
     {
         Vector3 targPos = targetPos.position;
         Vector2 trajectory = new Vector2(targPos.x- rb.position.x, targPos.y - rb.position.y);
@@ -123,26 +174,9 @@ public class EnemyController : MonoBehaviour
         if(magnitude != 0)
         {
             trajectory = trajectory * speed / magnitude;
-            rb.velocity = trajectory;
         }
 
-        if(trajectory.y!= 0)
-        {
-            if(trajectory.y > 0)
-                lastDir = UP;
-            else
-                lastDir = DOWN;
-        }
-        else if(trajectory.x != 0)
-        {
-            if(trajectory.x > 0)
-                lastDir = RIGHT;
-            else
-                lastDir = DOWN;
-        }
-        else{
-            lastDir = 1;
-        }
+        return trajectory;
 
     }
 
@@ -153,6 +187,8 @@ public class EnemyController : MonoBehaviour
             hitBoxes[lastDir].enabled = true;
             swingDir = lastDir;
             timeSwung = Time.time;
+            slashAnimators[lastDir].SetTrigger("Trigger");
+            moveAnimator.SetTrigger("Attack");
         }
     }
 

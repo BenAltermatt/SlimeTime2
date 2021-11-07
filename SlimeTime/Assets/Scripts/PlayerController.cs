@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour
     public float meleeCooldown;
     private float timeSwung;
     public int swingDir;
-    public bool swinging;
 
     public Rigidbody2D rb;
     public GameObject projectile;
@@ -55,7 +54,6 @@ public class PlayerController : MonoBehaviour
         cam = Camera.main;
         timeShot = Time.time;
         timeSwung = Time.time;
-        swinging = false;
 
         lastDir = DOWN;
         swingDir = DOWN;
@@ -94,7 +92,6 @@ public class PlayerController : MonoBehaviour
         if(Time.time - timeSwung > swingSpeed)
         {
             hitBoxes[swingDir].enabled = false;
-            swinging = false;
         }
         if(Input.GetKey("space"))
         {
@@ -145,7 +142,6 @@ public class PlayerController : MonoBehaviour
             hitBoxes[lastDir].enabled = true;
             swingDir = lastDir;
             slashAnimators[swingDir].SetTrigger("Trigger");
-            swinging = true;
             timeSwung = Time.time;
         }
     }
