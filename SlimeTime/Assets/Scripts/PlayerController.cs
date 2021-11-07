@@ -214,13 +214,14 @@ public class PlayerController : MonoBehaviour
 
         
     }
+    //Creates textmeshes that show stats going up:
+    private void CreateMessage(string message) {
+        GameObject go = Instantiate(pfTextPopup) as GameObject;
+        TMPro.TextMeshProUGUI text = go.GetComponentInChildren<TMPro.TextMeshProUGUI>();
+        text.SetText(message);
+        Destroy(go, 1);
+    }
 
 }
 
-//Creates textmeshes that show stats going up:
-private void CreateMessage(string message) {
-    GameObject go = Instantiate(pfTextPopup) as GameObject;
-    TMPro.TextMeshProUGUI text = go.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-    text.SetText(message);
-    Destroy(go, 1);
-}
+
