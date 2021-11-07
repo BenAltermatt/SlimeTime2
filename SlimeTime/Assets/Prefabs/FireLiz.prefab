@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 3822596314714705489}
   - component: {fileID: 4182682183234205337}
   m_Layer: 0
-  m_Name: BrownBird
+  m_Name: FireLiz
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -527,7 +527,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8287379610510893738, guid: 13a2042f8069b42a08d5f3344f7f7cee, type: 3}
+  m_Sprite: {fileID: -475338204271008398, guid: 1da65c94314ef46bcbbbc2904643d98a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
