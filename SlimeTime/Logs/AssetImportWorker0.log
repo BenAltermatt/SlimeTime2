@@ -5992,3 +5992,251 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003839 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.333 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1334ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (1131ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (409ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (408ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (125ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2282 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 253.2 MB.
+System memory in use after: 252.7 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 3022.
+Total: 4.450328 ms (FindLiveObjects: 0.267180 ms CreateObjectMapping: 0.096447 ms MarkObjects: 3.548388 ms  DeleteObjects: 0.537133 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 360.176490 seconds.
+  path: Assets/Sprites/Attacks/ice_full_animation.png
+  artifactKey: Guid(9bff80e1e542947559b077b0d651a68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Attacks/ice_full_animation.png using Guid(9bff80e1e542947559b077b0d651a68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff57222907099c28694602f7970fb72e') in 0.119441 seconds 
+  Import took 0.124619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Sprites/Edible/ice-lizard.png
+  artifactKey: Guid(93c27745197e84a74ac89f17eb310772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Edible/ice-lizard.png using Guid(93c27745197e84a74ac89f17eb310772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1583a3d8f0c9211eb2d1cfa72844be93') in 0.037798 seconds 
+  Import took 0.042886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.371591 seconds.
+  path: Assets/Sprites/Ranged People/person_ranged_attacks.png
+  artifactKey: Guid(cdaed8ae1d9124200807ace9e4f91ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ranged People/person_ranged_attacks.png using Guid(cdaed8ae1d9124200807ace9e4f91ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d5b48d2e12804554c8b0e65555e2ed') in 0.054879 seconds 
+  Import took 0.060073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.066233 seconds.
+  path: Assets/Sprites/Edible/poison-bush.png
+  artifactKey: Guid(25b919092c1934bf1804d5355c6b50e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Edible/poison-bush.png using Guid(25b919092c1934bf1804d5355c6b50e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edb170839a649ed4144049334d3439a') in 0.013312 seconds 
+  Import took 0.019327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.629403 seconds.
+  path: Assets/Dialogue/Dialogue/Environment/Sprites/Sky.psd
+  artifactKey: Guid(deffb25c4739fb34a903724d418bce00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogue/Dialogue/Environment/Sprites/Sky.psd using Guid(deffb25c4739fb34a903724d418bce00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23f69cdc460d023c541fd86ed42f5fd') in 0.287161 seconds 
+  Import took 0.293248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.794947 seconds.
+  path: Assets/Sprites/Edible/yellow-bird_animations.png
+  artifactKey: Guid(1c6347b50a5234337b09a186f5d43f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Edible/yellow-bird_animations.png using Guid(1c6347b50a5234337b09a186f5d43f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da38356b62eb067e6d8ad852857c6739') in 0.017511 seconds 
+  Import took 0.023047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.339826 seconds.
+  path: Assets/Sprites/Old People/cavewoman-allsides_attack.png
+  artifactKey: Guid(6c21257ba5151403d9971fda8180fb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Old People/cavewoman-allsides_attack.png using Guid(6c21257ba5151403d9971fda8180fb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdb1428b0f670c4ca28944f2e340f62a') in 0.038784 seconds 
+  Import took 0.044349 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008157 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.506 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1508ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (98ms)
+		EndReloadAssembly (1264ms)
+			LoadAssemblies (133ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (458ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (442ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (301ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2282 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 257.5 MB.
+System memory in use after: 257.0 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 3030.
+Total: 4.056457 ms (FindLiveObjects: 0.278541 ms CreateObjectMapping: 0.092420 ms MarkObjects: 3.214698 ms  DeleteObjects: 0.458702 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 15.204773 seconds.
+  path: Assets/Prefabs/CaveWoman.prefab
+  artifactKey: Guid(fc1c120f09ecb4d0dacdc2467dbf96a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CaveWoman.prefab using Guid(fc1c120f09ecb4d0dacdc2467dbf96a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6a01ac1f6a49d2666d4a8a65607dfa1') in 0.087345 seconds 
+  Import took 0.091885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.540494 seconds.
+  path: Assets/Sprites/Edible/fire-lizard.png
+  artifactKey: Guid(52064a339bcbe420d8e96c8dc65fad08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Edible/fire-lizard.png using Guid(52064a339bcbe420d8e96c8dc65fad08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14dc3b28d7a223a3cb9c1365bca2ad3') in 0.061457 seconds 
+  Import took 0.068555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.440425 seconds.
+  path: Assets/Sprites/Edible/blue-bird_animations.png
+  artifactKey: Guid(7d4422efebff5423cb10c32befe1b9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Edible/blue-bird_animations.png using Guid(7d4422efebff5423cb10c32befe1b9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8bea02179c8af1b9cbf3d79b4103934') in 0.058484 seconds 
+  Import took 0.064132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Sprites/blue-bird_animations.png
+  artifactKey: Guid(2973efb4eae3948d4af80b820c06beaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/blue-bird_animations.png using Guid(2973efb4eae3948d4af80b820c06beaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d010980ad8c7670c0b8bb23d45bfb0') in 0.068373 seconds 
+  Import took 0.074441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Sprites/Non-interactable objects/Building1.png
+  artifactKey: Guid(4b4beeca455c54460a3c4e6800f9d552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Non-interactable objects/Building1.png using Guid(4b4beeca455c54460a3c4e6800f9d552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '662277a89cf6314f797d7aefc9b780ac') in 0.012562 seconds 
+  Import took 0.018053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Sprites/Non-interactable objects/Building2.png
+  artifactKey: Guid(e58377692e085429fab2bcd4cf365856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Non-interactable objects/Building2.png using Guid(e58377692e085429fab2bcd4cf365856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6776725e985bae9f38af7f95086722') in 0.017375 seconds 
+  Import took 0.022893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Sprites/Non-interactable objects/Building3.png
+  artifactKey: Guid(98bca9e332abd4c0aac82106a995d99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Non-interactable objects/Building3.png using Guid(98bca9e332abd4c0aac82106a995d99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efd038f0c30abe4bb89543cba81eabe1') in 0.019614 seconds 
+  Import took 0.023704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Sprites/Edible/brown-bird_animations.png
+  artifactKey: Guid(15e11e16c6fe9446d822b19db6e657d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Edible/brown-bird_animations.png using Guid(15e11e16c6fe9446d822b19db6e657d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b551769828d80af762467d5b99533c8b') in 0.017790 seconds 
+  Import took 0.023605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.231170 seconds.
+  path: Assets/Prefabs/CaveMan.prefab
+  artifactKey: Guid(b349394d4f9bb4850bb8d01046e55500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CaveMan.prefab using Guid(b349394d4f9bb4850bb8d01046e55500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd659380c5a095af032c55f41857884b3') in 0.024084 seconds 
+  Import took 0.030536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.550024 seconds.
+  path: Assets/Prefabs/BlueBird.prefab
+  artifactKey: Guid(303f53b3999c1415187dd1ea61bdcdd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlueBird.prefab using Guid(303f53b3999c1415187dd1ea61bdcdd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579026a895340188aad2f657fd49224d') in 0.033365 seconds 
+  Import took 0.041767 seconds .
+
