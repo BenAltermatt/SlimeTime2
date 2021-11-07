@@ -132,6 +132,7 @@ MonoBehaviour:
   swingSpeed: 0
   projectileStrength: 1
   projectileSpeed: 10
+  corpsePf: {fileID: 3412938148999689555, guid: f5d7ef008793d4079b7071f6dc609f71, type: 3}
   meleeCooldown: 0
   swingDir: 0
   hurtBox: {fileID: 0}
