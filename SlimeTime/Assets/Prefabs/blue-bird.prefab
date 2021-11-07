@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7370799024709818893}
   - component: {fileID: 6249332229681681823}
   m_Layer: 0
-  m_Name: Square
+  m_Name: blue-bird
   m_TagString: Edible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
