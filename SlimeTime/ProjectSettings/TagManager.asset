@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Projectile
+  - Edible
   layers:
   - Default
   - TransparentFX
