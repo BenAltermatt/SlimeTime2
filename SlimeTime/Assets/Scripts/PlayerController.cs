@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro; //TextMeshPro
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class PlayerController : MonoBehaviour
     public float fireStrength;
     public float iceStrength;
     public float poisonStrength;
+    
+    //Pointer to pfTextPopup Prefab
+    public GameObject pfTextPopup;
 
     // takes care of shooting projectiles
     public float projectileCooldown;
@@ -153,35 +157,40 @@ public class PlayerController : MonoBehaviour
         {
             if(collider.gameObject.name == "blue-bird")
             {
-                // Debug.Log("Ate blue-bird (health)");
+                Debug.Log("Ate blue-bird (health)");
                 health+=1;
+                CreateMessage("+1 HLTH");
             }
             if(collider.gameObject.name == "yellow-bird")
             {
-                // Debug.Log("Ate yellow-bird (speed)");
+                Debug.Log("Ate yellow-bird (speed)");
                 speed+=1;
+                CreateMessage("+1 SPD");
             }
             if(collider.gameObject.name == "brown-bird")
             {
-                // Debug.Log("Ate brown-bird (defense)");
-                speed+=1;
+                Debug.Log("Ate brown-bird (defense)");
+                defense+=1;
+                CreateMessage("+1 DEF");
             }
             if(collider.gameObject.name == "fire-lizard")
             {
-                // Debug.Log("Ate fire-lizard");
+                Debug.Log("Ate fire-lizard");
                 fireStrength += 1;
+                CreateMessage("+1 FIRE");
             }
             if(collider.gameObject.name == "ice-lizard")
             {
-                // Debug.Log("Ate ice-lizard");
+                Debug.Log("Ate ice-lizard");
                 iceStrength += 1;
+                CreateMessage("+1 ICE");
             }
             if(collider.gameObject.name == "poison-bush")
             {
-                // Debug.Log("Ate poison-bush");
+                Debug.Log("Ate poison-bush");
                 poisonStrength += 1;
+                CreateMessage("+1 PSN");
             }
-
             Destroy(collider.gameObject);
         }
         
@@ -206,4 +215,12 @@ public class PlayerController : MonoBehaviour
         
     }
 
+}
+
+//Creates textmeshes that show stats going up:
+private void CreateMessage(string message) {
+    GameObject go = Instantiate(pfTextPopup) as GameObject;
+    TMPro.TextMeshProUGUI text = go.GetComponentInChildren<TMPro.TextMeshProUGUI>();
+    text.SetText(message);
+    Destroy(go, 1);
 }
