@@ -2405,3 +2405,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1567.509489 seconds.
+  path: Assets/Scenes/level-2
+  artifactKey: Guid(ab9f742388cfc477f8e76a64762bc138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level-2 using Guid(ab9f742388cfc477f8e76a64762bc138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded9d2b114e30240ea2d8a9d36eca9a7') in 0.013308 seconds 
+  Import took 0.046423 seconds .
+
