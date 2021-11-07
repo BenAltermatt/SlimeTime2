@@ -4096,3 +4096,139 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2276.744572 seconds.
+  path: Assets/Animations/Default Enemy/DefaultEnemy.controller
+  artifactKey: Guid(6f7f07a9e73ec44e982a0fa0eda34c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Default Enemy/DefaultEnemy.controller using Guid(6f7f07a9e73ec44e982a0fa0eda34c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e5b3395e28854b15d598b6fa553d8e') in 0.109423 seconds 
+  Import took 0.253097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 158.359324 seconds.
+  path: Assets/Animations/Default Enemy/DefaultEnemy.controller
+  artifactKey: Guid(6f7f07a9e73ec44e982a0fa0eda34c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Default Enemy/DefaultEnemy.controller using Guid(6f7f07a9e73ec44e982a0fa0eda34c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea76f4a236ee5ed576471b0ca7a9d7c7') in 0.020498 seconds 
+  Import took 0.029682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.959264 seconds.
+  path: Assets/Animations/Default Enemy/DefDown.anim
+  artifactKey: Guid(f84ad3389873c4c488d829a023762cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Default Enemy/DefDown.anim using Guid(f84ad3389873c4c488d829a023762cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d3f13c086ff6eb48cc7c3c182e5101') in 0.018021 seconds 
+  Import took 0.024565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.135233 seconds.
+  path: Assets/Animations/Default Enemy/DefIdle.anim
+  artifactKey: Guid(fdc3ff867e1d14155a32b9a8080e7b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Default Enemy/DefIdle.anim using Guid(fdc3ff867e1d14155a32b9a8080e7b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94635d5b60dd3411a51fa118498c3ee') in 0.011152 seconds 
+  Import took 0.020615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.543196 seconds.
+  path: Assets/Animations/Default Enemy/DefLeft.anim
+  artifactKey: Guid(748886e9d232d45ec887be36272e4ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Default Enemy/DefLeft.anim using Guid(748886e9d232d45ec887be36272e4ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b326a149e345d792d75732da6ce180') in 0.011835 seconds 
+  Import took 0.019601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.488021 seconds.
+  path: Assets/Animations/Default Enemy/DefRight.anim
+  artifactKey: Guid(ba9231703cc5344f38f42cf7d7cd9a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Default Enemy/DefRight.anim using Guid(ba9231703cc5344f38f42cf7d7cd9a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d5e91b5af19997bfadf7a668730a7b') in 0.014147 seconds 
+  Import took 0.022350 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004655 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.467 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1468ms)
+		BeginReloadAssembly (210ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (129ms)
+		EndReloadAssembly (1177ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (448ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (416ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (279ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2233 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 241.9 MB.
+System memory in use after: 242.0 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2888.
+Total: 3.979149 ms (FindLiveObjects: 0.369939 ms CreateObjectMapping: 0.114458 ms MarkObjects: 3.388196 ms  DeleteObjects: 0.105621 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 84.497494 seconds.
+  path: Assets/Animations/Default Enemy/FaceRight.anim
+  artifactKey: Guid(48645fef3d2bb479bbe030f04d69b8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Default Enemy/FaceRight.anim using Guid(48645fef3d2bb479bbe030f04d69b8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d1be6f3658deb1a7bb88beeb71c6e1') in 0.017489 seconds 
+  Import took 0.023536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.556997 seconds.
+  path: Assets/Animations/Default Enemy/FaceLeft.anim
+  artifactKey: Guid(ad9325038cdc547778fb8d857fed2495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Default Enemy/FaceLeft.anim using Guid(ad9325038cdc547778fb8d857fed2495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad40b77386d6f7d97b118b5346cbdc89') in 0.012510 seconds 
+  Import took 0.018736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.037081 seconds.
+  path: Assets/Animations/Default Enemy/FaceUp.anim
+  artifactKey: Guid(a9fb434c927734c4983bb5060aa78c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Default Enemy/FaceUp.anim using Guid(a9fb434c927734c4983bb5060aa78c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c484ae4dca2e0c7752bb1624fc9d45') in 0.012013 seconds 
+  Import took 0.020147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 156.825327 seconds.
+  path: Assets/Animations/Default Enemy/DefUp.anim
+  artifactKey: Guid(aba88fcc7fb15422fba8922cf88ef2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Default Enemy/DefUp.anim using Guid(aba88fcc7fb15422fba8922cf88ef2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3e1f0e5424f72c16e4533013b0a0d6') in 0.012557 seconds 
+  Import took 0.051800 seconds .
+
