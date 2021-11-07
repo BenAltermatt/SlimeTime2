@@ -111,11 +111,12 @@ public class EnemyController : MonoBehaviour
     {
         if(toBeDestroyed)
         {
-            Instantiate(corpsePf, tr);
             Destroy(gameObject);
         }
         if(health <= 0)
         {
+            GameObject corpse = Instantiate(corpsePf, tr);
+            corpse.transform.parent = gameObject.transform.parent;
             toBeDestroyed = true;
         }
         if(Time.time - timeSwung > swingSpeed)
