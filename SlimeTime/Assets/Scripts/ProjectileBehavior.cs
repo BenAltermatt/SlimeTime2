@@ -37,7 +37,7 @@ public class ProjectileBehavior : MonoBehaviour
             Destroy(gameObject);
     }
 
-    void OnTriggerEnter2D(Collider2D collision) 
+    void OnTriggerStay2D(Collider2D collision) 
     {
         // if its not hitting itself and not hitting the creator
         if(collision.gameObject.tag != "Projectile" && collision.gameObject.tag != parTag)

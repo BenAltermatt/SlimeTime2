@@ -529,11 +529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155947343112961978, guid: b88cadc21004a4528a5bf4165de94ae0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.47
       objectReference: {fileID: 0}
     - target: {fileID: 6155947343112961978, guid: b88cadc21004a4528a5bf4165de94ae0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.23
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 6155947343112961978, guid: b88cadc21004a4528a5bf4165de94ae0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -571,6 +571,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1832970744}
+    - target: {fileID: 6155947343112961981, guid: b88cadc21004a4528a5bf4165de94ae0, type: 3}
+      propertyPath: swingSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155947343112961981, guid: b88cadc21004a4528a5bf4165de94ae0, type: 3}
+      propertyPath: meleeCooldown
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b88cadc21004a4528a5bf4165de94ae0, type: 3}
 --- !u!1 &1711866364
@@ -867,7 +875,6 @@ MonoBehaviour:
   projectileCooldown: 0.2
   meleeCooldown: 1
   swingDir: 0
-  swinging: 0
   rb: {fileID: 0}
   projectile: {fileID: 6061886319510677427, guid: 8f1cec15abfb44baabd567b4b0a22cb8, type: 3}
   tr: {fileID: 0}
