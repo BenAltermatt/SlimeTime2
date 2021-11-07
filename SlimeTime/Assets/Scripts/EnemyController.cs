@@ -13,6 +13,8 @@ public class EnemyController : MonoBehaviour
     public float projectileStrength;
     public float projectileSpeed;
 
+    public GameObject corpsePf;
+
     private float timeShotted;
 
     // melee stuff
@@ -109,6 +111,7 @@ public class EnemyController : MonoBehaviour
     {
         if(toBeDestroyed)
         {
+            Instantiate(corpsePf, tr);
             Destroy(gameObject);
         }
         if(health <= 0)

@@ -178,7 +178,7 @@ public class PlayerController : MonoBehaviour
                 swingSpeed+=1;
                 CreateMessage("+1 SPD");
             }
-            if(collider.gameObject.name.Contains("human")) {
+            if(collider.gameObject.name.Contains("Human")) {
                 Debug.Log("Ate human (strength)");
                 strength += 1;
                 projectileStrength += 1;
