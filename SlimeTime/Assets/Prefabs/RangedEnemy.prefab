@@ -124,14 +124,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1dc483eb62d0450ca3eedd095e0e606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   health: 100
   defense: 0
   strength: 0
-  shootCooldown: 1
+  shootCooldown: 0.5
   swingSpeed: 0
   projectileStrength: 1
-  projectileSpeed: 5
+  projectileSpeed: 10
   meleeCooldown: 0
   swingDir: 0
   hurtBox: {fileID: 0}

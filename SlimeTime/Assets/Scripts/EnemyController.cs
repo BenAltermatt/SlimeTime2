@@ -49,7 +49,8 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        targetPos = target.GetComponent<Transform>();
+        //targetPos = target.GetComponent<Transform>();
+        targetPos = getTarget();
         tr = GetComponent<Transform>();
         timeShotted = Time.time;
         timeSwung = Time.time;
@@ -77,6 +78,7 @@ public class EnemyController : MonoBehaviour
         }
 
         isMoving = false;
+
     }
     
     // Update is called once per frame
@@ -95,6 +97,12 @@ public class EnemyController : MonoBehaviour
         prepareUpdate();
         moveProperly();
         attackProperly();
+    }
+
+    protected Transform getTarget()
+    {
+        GameObject[] target = GameObject.FindGameObjectsWithTag("Player");
+        return target[0].GetComponent<Transform>();
     }
 
     public void prepareUpdate()
